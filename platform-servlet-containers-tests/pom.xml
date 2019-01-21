@@ -34,13 +34,6 @@
         </dependencies>
     </dependencyManagement>
 
-    <pluginRepositories>
-        <pluginRepository>
-            <id>vaadin-add-ons</id>
-            <url>http://vaadin.com/nexus/content/repositories/vaadin-addons/</url>
-        </pluginRepository>
-    </pluginRepositories>
-
     <modules>
         <module>felix-jetty</module>
     </modules>
