@@ -26,7 +26,6 @@ import java.util.stream.Stream;
 
 import org.apache.commons.io.IOUtils;
 
-import com.vaadin.flow.component.accordion.Accordion;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.board.Board;
 import com.vaadin.flow.component.board.Row;
@@ -49,7 +48,6 @@ import com.vaadin.flow.component.formlayout.FormLayout;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.Label;
-import com.vaadin.flow.component.html.Paragraph;
 import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.icon.VaadinIcon;
@@ -293,9 +291,6 @@ public class ComponentsView extends VerticalLayout {
 
         Details details = new Details("Summary", new Span("Content"));
 
-        Accordion accordion = new Accordion();
-        accordion.add("Title", new Paragraph("Content"));
-
         add(new HorizontalLayout(components, layouts));
 
         components.add(button);
@@ -328,8 +323,6 @@ public class ComponentsView extends VerticalLayout {
         layouts.add(contextMenuTarget);
         layouts.add(board);
         layouts.add(appLayout);
-        layouts.add(accordion);
-
     }
 
     private Map<String, String> map(String value1, String value2) {
